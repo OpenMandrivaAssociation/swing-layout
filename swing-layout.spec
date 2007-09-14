@@ -26,7 +26,7 @@ Javadoc for %name
 %build
 ant
 cd dist
-%{__mv} %{name}.jar %{name}-%{version.jar
+%{__mv} %{name}.jar %{name}-%{version}.jar
 %{__ln_s} %{name}-%{version}.jar %{name}.jar
 
 
