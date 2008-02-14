@@ -3,6 +3,7 @@ Summary:	Swing Layout Extensions
 Version:	1.0.2
 Release:	%mkrel 1
 Group:		Development/Java
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		%{name}-%{version}-src.zip
 URL:		https://swing-layout.dev.java.net/
 License:	LGPL+
