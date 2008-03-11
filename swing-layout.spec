@@ -1,7 +1,7 @@
 Name:		swing-layout
 Summary:	Swing Layout Extensions
-Version:	1.0.2
-Release:	%mkrel 1
+Version:	1.0.3
+Release:	%mkrel 0.0.1
 Group:		Development/Java
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		%{name}-%{version}-src.zip
@@ -9,6 +9,7 @@ URL:		https://swing-layout.dev.java.net/
 License:	LGPL+
 BuildArch:	noarch
 BuildRequires:	java-devel >= 1.6.0, ant
+BuildRequires:  java-rpmbuild
 %description
 Swing Layout Extensions goal is to make it easy to create professional
 cross platform layouts with Swing. This project will consist of extensions
@@ -22,10 +23,10 @@ Group:		Development/Java
 Javadoc for %name
 
 %prep
-%setup -q -c %{name}
+%setup -q
 
 %build
-ant
+%{ant}
 cd dist
 %{__mv} %{name}.jar %{name}-%{version}.jar
 %{__ln_s} %{name}-%{version}.jar %{name}.jar
