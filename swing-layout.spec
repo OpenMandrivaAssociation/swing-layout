@@ -1,7 +1,7 @@
 Name:		swing-layout
 Summary:	Swing Layout Extensions
 Version:	1.0.3
-Release:	%mkrel 0.0.1
+Release:	%mkrel 0.0.2
 Group:		Development/Java
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source:		%{name}-%{version}-src.zip
