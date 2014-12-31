@@ -7,8 +7,9 @@ Source:		%{name}-%{version}-src.zip
 URL:		https://swing-layout.dev.java.net/
 License:	LGPL+
 BuildArch:	noarch
-BuildRequires:	java-devel >= 1.6.0, ant
-BuildRequires:  java-rpmbuild
+BuildRequires:	jpackage-utils >= 1.6
+BuildRequires:	java-devel >= 1.6.0
+BuildRequires:	ant
 %description
 Swing Layout Extensions goal is to make it easy to create professional
 cross platform layouts with Swing. This project will consist of extensions
